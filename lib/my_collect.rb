@@ -1,9 +1,9 @@
-def my_collect(collection)
+def my_collect(lang)
   i = 0
   new_array = []
-  while i < collection.length
-    new_array << yield(array[i])
+  while i < lang.length
+    new_array << yield(lang[i])
     i += 1
   end
-  collection
+  new_array
 end
